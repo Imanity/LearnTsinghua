@@ -1,0 +1,11 @@
+{
+  "name": "LearnTsinghua",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "清华大学 网络学堂 增强插件",
+  "icons": { "128": "Tsinghua.png" },
+  "browser_action": {
+    "default_icon": "Tsinghua.png",
+    "default_popup": "popup.html"
+  }
+}
