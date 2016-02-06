@@ -1,0 +1,10 @@
+body {
+  width: 250px;
+  font-family: 'Microsoft Yahei';
+  font-size: 15px;
+}
+
+button {
+  width: 75px;
+  height: 24px;
+}

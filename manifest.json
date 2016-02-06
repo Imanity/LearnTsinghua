@@ -4,8 +4,20 @@
   "manifest_version": 2,
   "description": "清华大学 网络学堂 增强插件",
   "icons": { "128": "Tsinghua.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/lesson/student/mainstudent.jsp"],
+      "js": ["js/mainstudent.js"]
+    }
+  ],
   "browser_action": {
     "default_icon": "Tsinghua.png",
     "default_popup": "popup.html"
-  }
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "web_accessible_resources": ["css/mainstudentStyle.css"]
 }
