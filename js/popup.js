@@ -18,4 +18,17 @@ $(document).ready(function() {
       $("#activate").html("取消激活");
     }
   });
+
+  $('#userpass').keydown(function() {
+    if(event.keyCode == 13) {
+      $('#login').click();
+    }
+  });
+
+  $('#login').click(function () {
+    var userid = $('#userid').val();
+    var userpass = $('#userpass').val();
+    var url = "https://learn.tsinghua.edu.cn/MultiLanguage/lesson/teacher/loginteacher.jsp?userid=" + userid + "&userpass=" + userpass;
+    chrome.tabs.create({'url': url});
+  });
 });

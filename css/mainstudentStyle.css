@@ -1,3 +1,11 @@
-#banner, footer {
+#banner, #footer {
+  display: none;
+}
+
+#box tbody tr:nth-child(1), tr:nth-child(3), tr:nth-child(4) {
+  display: none;
+}
+
+#box tbody tr:nth-child(2) td:nth-child(1), td:nth-child(2) {
   display: none;
 }

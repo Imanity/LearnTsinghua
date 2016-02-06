@@ -1,0 +1,11 @@
+#e_menu, #info_2 {
+  display: none;
+}
+
+#info_1 {
+  margin: 0 auto;
+}
+
+#info_1 tbody tr:nth-child(2) {
+  display: none;
+}

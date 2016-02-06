@@ -1,4 +1,4 @@
-var isLearnPageActivated;
+var isLearnPageActivated = true;
 
 function getOption(str) {
   if (str == 'isLearnPageActivated') {

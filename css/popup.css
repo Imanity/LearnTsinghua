@@ -2,9 +2,30 @@ body {
   width: 250px;
   font-family: 'Microsoft Yahei';
   font-size: 15px;
+  margin: 0px;
+}
+
+.paragraph {
+  margin: 0px;
+  padding: 5px;
+}
+
+.paragraph:hover {
+  background-color: #ccc;
+}
+
+h1 {
+  font-size: 18px;
+  font-family: '幼圆', 'Microsoft Yahei';
+  margin: 0px;
+  padding: 3px;
 }
 
 button {
   width: 75px;
   height: 24px;
+}
+
+input {
+  width: 100px;
 }
