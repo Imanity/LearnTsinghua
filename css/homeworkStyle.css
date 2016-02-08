@@ -1,0 +1,7 @@
+table {
+  width: 100% !important;
+}
+
+#info_1 tbody tr:nth-child(2) {
+  display: none;
+}

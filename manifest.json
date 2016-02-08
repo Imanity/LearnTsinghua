@@ -15,6 +15,11 @@
       "js": ["js/jquery.min.js", "js/MyCourse.js"],
       "run_at": "document_end",
       "all_frames": true
+    },
+    {
+      "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/lesson/student/hom_wk_brw.jsp?course_id=*"],
+      "js": ["js/homework.js"],
+      "all_frames": true
     }
   ],
   "browser_action": {
@@ -26,5 +31,5 @@
     "persistent": true
   },
   "content_security_policy": "script-src 'self'; object-src 'self'",
-  "web_accessible_resources": ["css/mainstudentStyle.css", "css/MyCourseStyle.css"]
+  "web_accessible_resources": ["css/mainstudentStyle.css", "css/MyCourseStyle.css", "css/homeworkStyle.css"]
 }
