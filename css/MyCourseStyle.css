@@ -2,10 +2,98 @@
   display: none;
 }
 
+/* 去除多余元素 */
 #info_1 {
   margin: 0 auto;
 }
 
-#info_1 tbody tr:nth-child(2) {
+#info_1 tbody tr:nth-child(1), tr:nth-child(2) {
   display: none;
+}
+
+#info_1 tbody tr td img {
+  display: none;
+}
+
+/*表格样式*/
+table {
+  border-collapse: collapse;
+  margin-bottom: 3em;
+  width: 100%;
+  background: #fff;
+}
+td, th {
+  padding: 0.75em 1.5em;
+  text-align: left;
+}
+	td.err {
+	background-color: #e992b9;
+	color: #fff;
+	font-size: 0.75em;
+	text-align: center;
+	line-height: 1;
+}
+th {
+  background-color: #31bc86;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+tbody th {
+	background-color: #2ea879;
+}
+tbody tr:nth-child(2n-1) {
+  background-color: #f5f5f5;
+  transition: all .125s ease-in-out;
+}
+tbody tr:hover {
+  background-color: rgba(129,208,177,.3) !important;
+}
+.sticky-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	margin: 3em 0;
+	width: 100%;
+}
+.sticky-wrap .sticky-thead,
+.sticky-wrap .sticky-col,
+.sticky-wrap .sticky-intersect {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .125s ease-in-out;
+	z-index: 50;
+	width: auto; /* Prevent table from stretching to full size */
+}
+.sticky-wrap .sticky-thead {
+  box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125) !important;
+	z-index: 100;
+	width: 100%; /* Force stretch */
+}
+.sticky-wrap .sticky-intersect {
+	opacity: 1;
+	z-index: 150;
+}
+.sticky-wrap .sticky-intersect th {
+  background-color: #666;
+  color: #eee;
+}
+.sticky-wrap td,
+.sticky-wrap th {
+	box-sizing: border-box;
+}
+
+/*字体样式*/
+table {
+  font-size: 15px !important;
+  font-family: 'Microsoft Yahei' !important;
+  width: 100% !important;
+}
+
+thead tr {
+  font-size: 16px;
+  font-family: '幼圆', 'Microsoft Yahei';
+  height: 50px;
 }

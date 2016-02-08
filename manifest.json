@@ -12,7 +12,8 @@
     },
     {
       "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/lesson/student/MyCourse.jsp?language=cn"],
-      "js": ["js/MyCourse.js"],
+      "js": ["js/jquery.min.js", "js/MyCourse.js"],
+      "run_at": "document_end",
       "all_frames": true
     }
   ],
@@ -22,7 +23,7 @@
   },
   "background": {
     "scripts": ["js/background.js"],
-    "persistent": false
+    "persistent": true
   },
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "web_accessible_resources": ["css/mainstudentStyle.css", "css/MyCourseStyle.css"]
