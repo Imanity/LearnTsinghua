@@ -14,18 +14,22 @@ body {
   background-color: #ccc;
 }
 
+.paragraph input {
+  position: absolute;
+  left: 40%;
+  width: 60%;
+}
+
+#login {
+  position: static;
+  margin: 5px;
+  width: 75px;
+  height: 24px;
+}
+
 h1 {
   font-size: 18px;
   font-family: '幼圆', 'Microsoft Yahei';
   margin: 0px;
   padding: 3px;
-}
-
-button {
-  width: 75px;
-  height: 24px;
-}
-
-input {
-  width: 100px;
 }
