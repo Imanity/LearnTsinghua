@@ -106,15 +106,3 @@ a:hover {
   color: #666 !important;
   text-decoration: none !important;
 }
-
-/* 详细内容框 */
-#detail {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 200;
-  background-color: white;
-  display: none;
-  margin: 0px;
-  border: 0px;
-}

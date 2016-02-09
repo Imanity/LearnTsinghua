@@ -31,15 +31,5 @@ chrome.extension.sendMessage({cmd: "isLearnPageActivated"}, function (response) 
       }
     }
     var tmp = $('body').html();
-    $('body').html(tmp + '<iframe id="detail" width="200px" height="160px"></iframe>');
-    $('.detail').mouseover(function (e) {
-      $('#detail').attr('src', this.href);
-      $('#detail').css('display', 'inline');
-      $('#detail').css('left', e.clientX + 50);
-      $('#detail').css('top', e.clientY - 20);
-    });
-    $('.detail').mouseout(function () {
-      $('#detail').css('display', 'none');
-    });
   };
 });

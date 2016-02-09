@@ -18,7 +18,7 @@
     },
     {
       "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/lesson/student/hom_wk_brw.jsp?course_id=*"],
-      "js": ["js/homework.js"],
+      "js": ["js/jquery.min.js", "js/homework.js"],
       "all_frames": true
     }
   ],
