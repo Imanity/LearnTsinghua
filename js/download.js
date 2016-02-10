@@ -23,6 +23,11 @@ chrome.extension.sendMessage({cmd: "isLearnPageActivated"}, function (response) 
     }
     str += '</ul></nav>';
     $('#table_box').parent().html(str);
+    for (var i = 0; i < 6; i++) {
+      if ($('.title:eq(' + i + ')') && $('.title:eq(' + i + ')').html().split('\">')[1]) {
+        $('.title:eq(' + i + ')').html($('.title:eq(' + i + ')').html().split('\">')[1].split('</a>')[0]);
+      }
+    }
     (function() {
 			[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
 				var menuItems = menu.querySelectorAll('.menu__link'),

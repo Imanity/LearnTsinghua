@@ -39,6 +39,13 @@ td {
   top: 90px;
 }
 
+#table_box tr:nth-child(1) td {
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
+  color: #666 !important;
+  background-color: #eee !important;
+}
+
 #info_1 tbody tr:nth-child(2) td #table_box tbody tr:nth-child(1) td {
   height: 40px;
   background-color: #31bc86 !important;
