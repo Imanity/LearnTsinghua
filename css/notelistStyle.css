@@ -1,0 +1,93 @@
+table {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+td {
+  border: 0px !important;
+}
+
+/* 标题栏 */
+.info_title {
+  height: 50px !important;
+  background-color: #99CCCC !important;
+  padding: 0em 0em 0em 1em !important;
+  border: 0px !important;
+  font-style: normal !important;
+  color: #666699 !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  font-size: 17px !important;
+  font-family: '幼圆', 'Microsoft Yahei' !important;
+}
+
+.info_title div {
+  padding-top: 10px;
+  margin-right: 5em;
+}
+
+#info_b {
+  display: none;
+}
+
+/* 公告列表 */
+#info_1 tbody tr:nth-child(2) td #table_box tbody tr:nth-child(1) td {
+  height: 40px;
+  background-color: #31bc86 !important;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: '幼圆', 'Microsoft Yahei';
+  padding: 0px;
+}
+
+#table_box {
+  border: 0px !important;
+}
+
+.tr1, .tr2 {
+  transition: all .125s ease-in-out;
+}
+
+.tr1:hover, .tr2:hover {
+  background-color: rgba(129,208,177,.3) !important;
+}
+
+.tr1 td:nth-child(1), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+  text-align: center;
+}
+.tr2 td:nth-child(1), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+  text-align: center;
+}
+
+.tr1 td {
+  padding: 0.75em 1.5em;
+  color: #666 !important;
+  text-decoration: none !important;
+  font-family: 'Microsoft Yahei' !important;
+}
+.tr2 td {
+  padding: 0.75em 1.5em;
+  color: #666 !important;
+  text-decoration: none !important;
+  font-family: 'Microsoft Yahei' !important;
+}
+
+.tr1 td a {
+  font-size: 15px !important;
+  font-family: 'Microsoft Yahei' !important;
+}
+.tr2 td a {
+  font-size: 15px !important;
+  font-family: 'Microsoft Yahei' !important;
+}
+
+a {
+  color: #666 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #666 !important;
+  text-decoration: none !important;
+}

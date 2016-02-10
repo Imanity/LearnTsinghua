@@ -20,6 +20,21 @@
       "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/lesson/student/hom_wk_brw.jsp?course_id=*"],
       "js": ["js/jquery.min.js", "js/homework.js"],
       "all_frames": true
+    },
+    {
+      "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/lesson/student/download.jsp?course_id=*"],
+      "js": ["js/jquery.min.js", "js/classie.js", "js/clipboard.min.js", "js/download.js"],
+      "all_frames": true
+    },
+    {
+      "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/public/bbs/note_list_student.jsp?bbs_id=*"],
+      "js": ["js/jquery.min.js", "js/notelist.js"],
+      "all_frames": true
+    },
+    {
+      "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/lesson/student/course_locate.jsp?course_id=*"],
+      "js": ["js/jquery.min.js", "js/course.js"],
+      "all_frames": true
     }
   ],
   "browser_action": {
@@ -31,5 +46,5 @@
     "persistent": true
   },
   "content_security_policy": "script-src 'self'; object-src 'self'",
-  "web_accessible_resources": ["css/mainstudentStyle.css", "css/MyCourseStyle.css", "css/homeworkStyle.css"]
+  "web_accessible_resources": ["css/mainstudentStyle.css", "css/MyCourseStyle.css", "css/homeworkStyle.css", "css/downloadStyle.css", "css/notelistStyle.css", "css/courseStyle.css"]
 }

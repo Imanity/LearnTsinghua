@@ -10,5 +10,6 @@ chrome.extension.sendMessage({cmd: "isLearnPageActivated"}, function (response) 
     var head=document.getElementsByTagName("head")[0];
     head.appendChild(newElement);
     $('.info_title').html('<div>' + $('.info_title').html().split('&nbsp;')[1].split('\"')[0] + '</div><button class="button button--winona button--border-thin button--round-s" data-text="查看成绩" onclick="javascript:window.location.href=\'hom_wk_recmark.jsp?course_id=133402\';"><span>查看成绩</span></button>');
+    $('body').html($('body').html().split('height="25"')[0] + $('body').html().split('height="25"')[1]);
   }
 });
