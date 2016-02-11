@@ -10,6 +10,6 @@ chrome.extension.sendMessage({cmd: "isLearnPageActivated"}, function (response) 
     var head=document.getElementsByTagName("head")[0];
     head.appendChild(newElement);
     $('body').html($('body').html().split('scrolling="no"')[0] + 'id="frame"' + $('body').html().split('scrolling="no"')[1]);
-    $('#frame').css('height', document.body.clientHeight + 'px'); 
+    $('#frame').css('height', document.body.clientHeight + 'px');
   }
 });
