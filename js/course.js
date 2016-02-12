@@ -11,9 +11,11 @@ chrome.extension.sendMessage({cmd: "isLearnPageActivated"}, function (response) 
     head.appendChild(newElement);
     $('body').html($('body').html().split('scrolling="no"')[0] + 'id="frame"' + $('body').html().split('scrolling="no"')[1]);
     $('#frame').css('height', document.body.clientHeight + 'px');
-    var content = $('#left_menu .menu_common');
+    var content = $('#left_menu .menu_common a');
     var str = '<div id="menu"><div id="circle">菜单</div>';
+    var link = new Array();
     for (var i = 0; i < content.length; i++) {
+      link[i] = content[i].outerHTML.split('href=\"')[1].split('\"')[0];
       str += '<div id="circle">' + content[i].innerHTML + '</div>';
     }
     $('body').html($('body').html() + str + '</div><div id="mask"></div>');
@@ -66,6 +68,13 @@ chrome.extension.sendMessage({cmd: "isLearnPageActivated"}, function (response) 
       $('#circle:nth-child(' + (i + 2) + ')').css('left', init_X);
       $('#circle:nth-child(' + (i + 2) + ')').css('top', init_Y);
     }
+    function clickEvent(id) {
+      for (var i = 0; i < content.length; i++) {
+        $('#circle:nth-child(' + (i + 2) + ')').css('display', 'none');
+      }
+      document.getElementById("frame").src = link[id - 2];
+    }
+    //鼠标进入
     $('#circle:nth-child(2)').mouseenter(function () {
       $('#circle:nth-child(2)').animate({width: '100px', height: '100px', 'border-radius': '50px', 'background-size': '100px', 'font-size': '20px', 'padding-top': '40px', 'left': '-=15px', 'top': '-=15px'});
     });
@@ -90,6 +99,7 @@ chrome.extension.sendMessage({cmd: "isLearnPageActivated"}, function (response) 
     $('#circle:nth-child(9)').mouseenter(function () {
       $('#circle:nth-child(9)').animate({width: '100px', height: '100px', 'border-radius': '50px', 'background-size': '100px', 'font-size': '20px', 'padding-top': '40px', 'left': '-=15px', 'top': '-=15px'});
     });
+    //鼠标离开
     $('#circle:nth-child(2)').mouseleave(function () {
       $('#circle:nth-child(2)').animate({width: '70px', height: '70px', 'border-radius': '35px', 'background-size': '70px', 'font-size': '14px', 'padding-top': '28px', 'left': '+=15px', 'top': '+=15px'});
     });
@@ -113,6 +123,31 @@ chrome.extension.sendMessage({cmd: "isLearnPageActivated"}, function (response) 
     });
     $('#circle:nth-child(9)').mouseleave(function () {
       $('#circle:nth-child(9)').animate({width: '70px', height: '70px', 'border-radius': '35px', 'background-size': '70px', 'font-size': '14px', 'padding-top': '28px', 'left': '+=15px', 'top': '+=15px'});
+    });
+    //鼠标单击
+    $('#circle:nth-child(2)').click(function () {
+      clickEvent(2);
+    });
+    $('#circle:nth-child(3)').click(function () {
+      clickEvent(3);
+    });
+    $('#circle:nth-child(4)').click(function () {
+      clickEvent(4);
+    });
+    $('#circle:nth-child(5)').click(function () {
+      clickEvent(5);
+    });
+    $('#circle:nth-child(6)').click(function () {
+      clickEvent(6);
+    });
+    $('#circle:nth-child(7)').click(function () {
+      clickEvent(7);
+    });
+    $('#circle:nth-child(8)').click(function () {
+      clickEvent(8);
+    });
+    $('#circle:nth-child(9)').click(function () {
+      clickEvent(9);
     });
   };
 });
