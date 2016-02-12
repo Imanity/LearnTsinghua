@@ -23,3 +23,54 @@
 #left_center, #right_center {
   background-color: #fff !important;
 }
+
+#left_menu {
+  display: none;
+}
+
+#circle {
+  position: absolute !important;
+  display: none;
+  left: 300px;
+  top: 300px;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  z-index: 50;
+  text-align: center;
+  padding-top: 28px;
+  font-size: 14px;
+  font-family: '幼圆', 'Microsoft Yahei';
+  color: white !important;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: 70px;
+}
+
+#circle a {
+  font-weight: bold;
+  color: white !important;
+}
+
+#circle:hover {
+  cursor: pointer;
+}
+
+#circle:nth-child(1) {
+  display: inline;
+  z-index: 100;
+  position: absolute !important;
+}
+
+#mask {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: white;
+  z-index: 1;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}

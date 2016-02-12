@@ -33,7 +33,7 @@
     },
     {
       "matches": ["http://learn.tsinghua.edu.cn/MultiLanguage/lesson/student/course_locate.jsp?course_id=*"],
-      "js": ["js/jquery.min.js", "js/course.js"],
+      "js": ["js/draggabilly.pkgd.min.js", "js/jquery.min.js", "js/course.js"],
       "all_frames": true
     }
   ],
@@ -46,5 +46,6 @@
     "persistent": true
   },
   "content_security_policy": "script-src 'self'; object-src 'self'",
-  "web_accessible_resources": ["css/mainstudentStyle.css", "css/MyCourseStyle.css", "css/homeworkStyle.css", "css/downloadStyle.css", "css/notelistStyle.css", "css/courseStyle.css"]
+  "web_accessible_resources": ["css/mainstudentStyle.css", "css/MyCourseStyle.css", "css/homeworkStyle.css", "css/downloadStyle.css", "css/notelistStyle.css", "css/courseStyle.css",
+  "images/color0.png", "images/color1.png", "images/color2.png", "images/color3.png", "images/color4.png", "images/color5.png", "images/color6.png", "images/color7.png", "images/color8.png"]
 }
